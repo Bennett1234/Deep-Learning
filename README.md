@@ -1,5 +1,7 @@
 # Deep-Learning
 
+Https://ut.philkr.net/deeplearning/
+
 ## Binary Cross-Entropy With Logits
 
 In binary classification tasks, there are two common versions of binary cross-entropy (BCE) loss:
