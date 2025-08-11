@@ -27,4 +27,5 @@ Both are mathematically equivalent, but the logits version is **more stable** fo
 
 ### It is okay to find local minimal, key is learning rate and initialize model right
 
-## we can only call backward once and on sacaler value
+## Backward and Grad function
+### we can only call backward once and on sacaler value, and call grad multiple time will sum the gradient up, so need to reset each time.
