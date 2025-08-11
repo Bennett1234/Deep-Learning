@@ -24,3 +24,7 @@ This form avoids computing `sigmoid(z)` explicitly:
 BCEWithLogits(y, z) = max(z, 0) - z * y + log(1 + exp(-abs(z)))
 
 Both are mathematically equivalent, but the logits version is **more stable** for large values of `z`. This is why deep learning frameworks (like PyTorch’s `BCEWithLogitsLoss`) use it internally.
+
+### It is okay to find local minimal, key is learning rate and initialize model right
+
+## we can only call backward once and on sacaler value
