@@ -38,3 +38,8 @@ Both are mathematically equivalent, but the logits version is **more stable** fo
 
 ## :palm_tree: Output representation.
 ### Deep network always output real values, output transformation converts them into what we want, train the network without output transformation.
+
+## 🌴 Reduce SGD variance
+### Converge faster with smaller variance
+1. Minibatch
+2. Momentum
