@@ -44,10 +44,11 @@ Both are mathematically equivalent, but the logits version is **more stable** fo
 1. Minibatch
 2. Momentum
 
-## 🌴 Normalization
+## 🌴 Normalization & Residuals
 ### Batch and Layer normalization, Not only in backpropagation does the model learn general parameters (like weights and biases of a linear layer), but it also learns the scale and shift parameters of normalization. these parameters applied during normalization is to give flexibility back into the network.
 ### BatchNorm: During time for referene, it uses running mean andn variance observed during training and applied learnt parameters on test sample. Along each channel.
 ### LayerNorm: Self-contained not like BatchNorm.
 ### GroupNorm: Variation of common BatchNorm.
 ### In practice, add normalization before or after activation, if added before activation, since your mean is 0, half of your input will be negative and hence be killed by avtivation and that's why you need to learn the scaling and shifting paramters. However, this generally works slightly better.
 ### In practice, start with LayerNorm, then GroupNorm, then BatchNorm.
+### Normalization + Residuals connections fix vanishing activation and gradients.
